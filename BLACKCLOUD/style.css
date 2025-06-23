@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Orbitron", sans-serif;
+  background: url("https://assets.albiononline.com/uploads/media/default/media/95194b1aa10668eb3bfa23512a12d6c6c9ead073.jpeg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px solid #0ff;
+}
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  width: 100%;
+}
+.panel {
+  background-color: rgba(10, 10, 20, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  /* margin: 1rem; */
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 20px #0ff5;
+}
+.panel1 {
+  margin-bottom: 2.9rem;
+}
+h2 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+  line-height: 2;
+}
+ul li::before {
+  content: "✔";
+  margin-right: 0.5rem;
+  color: #0f0;
+}
+.discord-button {
+  background: linear-gradient(90deg, #7289da, #99aab5);
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px #7289da;
+  transition: transform 0.2s ease;
+}
+.discord-button:hover {
+  transform: scale(1.05);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 2px solid #0ff;
+}
+/* Estilos para celulares */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+  section {
+    padding: 1rem;
+  }
+  .panel {
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .discord-button {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  ul {
+    font-size: 0.95rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  footer {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+/* Estilos para tablets e iPads */
+@media (max-width: 900px) and (min-width: 601px) {
+  header {
+    font-size: 1.8rem;
+  }
+  .panel {
+    padding: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  ul {
+    font-size: 1rem;
+  }
+  .discord-button {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+}
